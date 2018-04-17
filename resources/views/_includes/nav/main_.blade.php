@@ -1,13 +1,10 @@
 
   <nav class="navbar is-fixed-top">
     <div class="navbar navbar-menu is-hidden-desktop is-fixed-top thetop" id="navMenu">
-
-      <div class="navbar-brand navbar-item m-l-100 m-t-30">
+      <div class="navbar-brand navbar-item m-l-100 m-t-10">
           {{-- <a href=""><img src="/img/logo.jpg" alt="LOGO" width="112" height="112"></a> --}}
       </div> <!--end navbar brand is hidden -->
-
-
-      <div class="container is-fullscreen m-t-30">
+      <div class="container is-fullscreen m-t-10">
             <navbar-item class="vertical m-l-100 m-t-10">
               <ul>
                 <li><a href="/">HOME</a></li>
@@ -67,11 +64,10 @@
 
 
     <div class="navbar navbar-menu topper">
-        <div class="navbar-brand navbar-item m-l-100 m-t-10 ">
-              <a href="/"><img src="img/logo.jpg" alt="LOGO"></a>
+        <div class="navbar-brand navbar-item m-l-100 m-t-20 ">
+              {{-- <div class="logo"><a href="/"><img src="img/logo.jpg" alt="LOGO"></a></div> --}}
         </div> <!--end navbar display the logo alone-->
-
-        <div class="navbar-end navbar-burger navbar-item m-r-100 m-t-30" data-target="navMenu">
+        <div class="navbar-end navbar-burger navbar-item m-r-100 m-t-20 m-b-20 menu" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>

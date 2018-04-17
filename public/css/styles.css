@@ -42,7 +42,20 @@ html {
 }
 
 .navbar-burger:hover {
-    background-color: inherit !important;
+    background-color:unset !important;
+}
+
+.navbar.is-fixed-bottom,
+.navbar.is-fixed-top.black {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+  background-color:rgb(0,0,0,0.2);
+  transition: all 0.4s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  transition-timing-function: ease-out;
 }
 
 /* landing page background */
