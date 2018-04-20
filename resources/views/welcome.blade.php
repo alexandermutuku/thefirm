@@ -48,7 +48,7 @@
           </div>
           <div class="column is-6 is-offset-1 has-text-right p-r-100">
             <h1 class="title is-2 has-text-right">
-              What make us unique ?
+              What makes us unique ?
             </h1>
             <hr>
             <h2 class="subtitle is-4 m-t-20 is-italic">
@@ -121,55 +121,58 @@
     </div> <!--end of section -->
 
 <div class="hero-body">
-<div class="container">
-  <div class="tile is-ancestor">
-    <div class="tile is-4 is-parent">
-    <a href="">
-      <article class="tile is-child gray post">
-        <figure class="image is-0.5by1">
-          <img src="/img/pic_3.png" alt="Description">
-        </figure>
-        <span class="post__date" href="">22nd January 2018 </span>
-        <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
-      </article>
-    </a>
-    </div>
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-parent">
+        <a href="">
+          <article class="tile is-child gray post">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_3.png" alt="Description">
+            </figure>
+            <span class="post__date" href="">22nd January 2018 </span>
+            <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
+          </article>
+        </a>
+      </div>
 
-    <div class="tile is-vertical is-parent">
+      <div class="tile is-vertical is-parent">
+        <a href="">
+          <article class="tile is-child gray post">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_2.png" alt="Description">
+            </figure>
+            <span class="post__date" href="">22nd January 2018 </span>
+            <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
+          </article>
+       </a>
       <a href="">
-      <article class="tile is-child gray post">
-        <figure class="image is-0.5by1">
-          <img src="/img/pic_2.png" alt="Description">
-        </figure>
-        <span class="post__date" href="">22nd January 2018 </span>
-        <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
-      </article>
-     </a>
-    <a href="">
-      <article class="tile is-child gold post">
-        <figure class="image is-0.5by1">
-          <img src="/img/pic_1.png" alt="Description">
-        </figure>
-        <span class="post__date" href="">22nd January 2018 </span>
-        <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
-      </article>
-    </a>
+        <article class="tile is-child gold post">
+          <figure class="image is-0.5by1">
+            <img src="/img/pic_1.png" alt="Description">
+          </figure>
+          <span class="post__date" href="">22nd January 2018 </span>
+          <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
+        </article>
+      </a>
+      </div>
+
+      <div class="tile is-parent">
+        <a href="">
+          <article class="tile is-child gray post">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_1.png" alt="Description">
+            </figure>
+            <span class="post__date" href="">22nd January 2018 </span>
+            <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
+          </article>
+        </a>
+      </div>
     </div>
 
-    <div class="tile is-parent">
-    <a href="">
-      <article class="tile is-child gray post">
-        <figure class="image is-0.5by1">
-          <img src="/img/pic_1.png" alt="Description">
-        </figure>
-        <span class="post__date" href="">22nd January 2018 </span>
-        <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
-      </article>
-    </a>
-    </div>
-  </div>
-  </div>
-  </div>
+  <div id="container"></div>
+      <a><div class="has-text-weight-light"id="showMoreTrigger"></div></a>
+  </div> <!--load more buttom-->
+</div>
     @include('_includes.footer')<!--includes the footer -->
 
   </body>

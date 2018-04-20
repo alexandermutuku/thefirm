@@ -24,17 +24,17 @@
 
 		<div class="floating-chat">
 		<i class="fa fa-comments" aria-hidden="true"></i>
-		<div class="chat">
-				<div class="header">
-						<span class="title">
+		<div class="chat-chat">
+				<div class="chat-header">
+						<span class="chat-title">
 								what's on your mind?
 						</span>
-						<button>
+						<chat-button>
 								<i class="fa fa-times" aria-hidden="true"></i>
-						</button>
+						</chat-button>
 
 				</div>
-				<ul class="messages">
+				<ul class="chat-messages">
 						<li class="other">asdasdasasdasdasasdasdasasdasdasasdasdasasdasdasasdasdas</li>
 						<li class="other">Are we dogs??? 🐶</li>
 						<li class="self">no... we're human</li>
@@ -45,12 +45,12 @@
 						<li class="other">don't be so negative! here's a banana 🍌</li>
 						<li class="self">......... -___-</li>
 				</ul>
-				<div class="footer">
-						<div class="text-box" contenteditable="true" disabled="true"></div>
-						<button id="sendMessage">send</button>
+				<div class="chat-footer">
+						<div class="chat-text-box" contenteditable="true" disabled="true"></div>
+						<chat-button id="sendMessage">send</chat-button>
 				</div>
 		</div>
-		</div> <!--floating chat buttom -->
+	</div> <!-- end of floating chat buttom -->
 
 		<hr class="fullwidth m-b-20 m-t-20">
 		<div class="columns is-size-6">

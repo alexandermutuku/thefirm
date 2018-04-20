@@ -17690,13 +17690,13 @@ h1 {
   background-attachment: fixed;
 }
 
-.floating-chat.enter:hover {
+.floating-chat.chat-enter:hover {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   opacity: 1;
 }
 
-.floating-chat.enter {
+.floating-chat.chat-enter {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 0.6;
@@ -17704,7 +17704,7 @@ h1 {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.14);
 }
 
-.floating-chat.expand {
+.floating-chat.chat-expand {
   width: 250px;
   max-height: 400px;
   height: 400px;
@@ -17719,16 +17719,18 @@ h1 {
           box-shadow: 0 0 3pt 2pt rgba(14, 200, 121, 0.3);
 }
 
-.floating-chat button {
+.floating-chat chat-button {
   background: transparent;
   border: 0;
   color: white;
   text-transform: uppercase;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px;
 }
 
-.floating-chat .chat {
+.floating-chat .chat-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17750,7 +17752,7 @@ h1 {
   bottom: 0;
 }
 
-.floating-chat .chat.enter {
+.floating-chat .chat-chat.chat-enter {
   opacity: 1;
   border-radius: 0;
   margin: 10px;
@@ -17758,7 +17760,7 @@ h1 {
   height: auto;
 }
 
-.floating-chat .chat .header {
+.floating-chat .chat-chat .chat-header {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding-bottom: 10px;
@@ -17768,7 +17770,7 @@ h1 {
   background: transparent;
 }
 
-.floating-chat .chat .header .title {
+.floating-chat .chat-chat .chat-header .chat-title {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -17777,12 +17779,12 @@ h1 {
   padding: 0 5px;
 }
 
-.floating-chat .chat .header button {
+.floating-chat .chat-chat .chat-header chat-button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-.floating-chat .chat .messages {
+.floating-chat .chat-chat .chat-messages {
   padding: 10px;
   margin: 0;
   list-style: none;
@@ -17795,21 +17797,21 @@ h1 {
   background: transparent;
 }
 
-.floating-chat .chat .messages::-webkit-scrollbar {
+.floating-chat .chat-chat .chat-messages::-webkit-scrollbar {
   width: 5px;
 }
 
-.floating-chat .chat .messages::-webkit-scrollbar-track {
+.floating-chat .chat-chat .chat-messages::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: rgba(25, 147, 147, 0.1);
 }
 
-.floating-chat .chat .messages::-webkit-scrollbar-thumb {
+.floating-chat .chat-chat .chat-messages::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: rgba(25, 147, 147, 0.2);
 }
 
-.floating-chat .chat .messages li {
+.floating-chat .chat-chat .chat-messages li {
   position: relative;
   clear: both;
   display: inline-block;
@@ -17822,7 +17824,7 @@ h1 {
   max-width: 81%;
 }
 
-.floating-chat .chat .messages li:before {
+.floating-chat .chat-chat .chat-messages li:before {
   position: absolute;
   top: 0;
   width: 25px;
@@ -17832,7 +17834,7 @@ h1 {
   background-size: cover;
 }
 
-.floating-chat .chat .messages li:after {
+.floating-chat .chat-chat .chat-messages li:after {
   position: absolute;
   top: 10px;
   content: '';
@@ -17841,7 +17843,7 @@ h1 {
   border-top: 10px solid rgba(25, 147, 147, 0.2);
 }
 
-.floating-chat .chat .messages li.other {
+.floating-chat .chat-chat .chat-messages li.other {
   animation: show-chat-odd 0.15s 1 ease-in;
   -moz-animation: show-chat-odd 0.15s 1 ease-in;
   -webkit-animation: show-chat-odd 0.15s 1 ease-in;
@@ -17850,17 +17852,17 @@ h1 {
   color: #0AD5C1;
 }
 
-.floating-chat .chat .messages li.other:before {
+.floating-chat .chat-chat .chat-messages li.other:before {
   right: -45px;
   background-image: url(https://github.com/Thatkookooguy.png);
 }
 
-.floating-chat .chat .messages li.other:after {
+.floating-chat .chat-chat .chat-messages li.other:after {
   border-right: 10px solid transparent;
   right: -10px;
 }
 
-.floating-chat .chat .messages li.self {
+.floating-chat .chat-chat .chat-messages li.self {
   animation: show-chat-even 0.15s 1 ease-in;
   -moz-animation: show-chat-even 0.15s 1 ease-in;
   -webkit-animation: show-chat-even 0.15s 1 ease-in;
@@ -17869,17 +17871,17 @@ h1 {
   color: #0EC879;
 }
 
-.floating-chat .chat .messages li.self:before {
+.floating-chat .chat-chat .chat-messages li.self:before {
   left: -45px;
   background-image: url(https://github.com/ortichon.png);
 }
 
-.floating-chat .chat .messages li.self:after {
+.floating-chat .chat-chat .chat-messages li.self:after {
   border-left: 10px solid transparent;
   left: -10px;
 }
 
-.floating-chat .chat .footer {
+.floating-chat .chat-chat .chat-footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
@@ -17890,7 +17892,7 @@ h1 {
   background: transparent;
 }
 
-.floating-chat .chat .footer .text-box {
+.floating-chat .chat-chat .chat-footer .chat-text-box {
   border-radius: 3px;
   background: rgba(25, 147, 147, 0.2);
   min-height: 100%;
@@ -17901,16 +17903,16 @@ h1 {
   padding: 2px 5px;
 }
 
-.floating-chat .chat .footer .text-box::-webkit-scrollbar {
+.floating-chat .chat-chat .chat-footer .chat-text-box::-webkit-scrollbar {
   width: 5px;
 }
 
-.floating-chat .chat .footer .text-box::-webkit-scrollbar-track {
+.floating-chat .chat-chat .chat-footer .chat-text-box::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: rgba(25, 147, 147, 0.1);
 }
 
-.floating-chat .chat .footer .text-box::-webkit-scrollbar-thumb {
+.floating-chat .chat-chat .chat-footer .chat-text-box::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: rgba(25, 147, 147, 0.2);
 }

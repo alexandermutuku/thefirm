@@ -52,8 +52,8 @@ html {
   right: 0;
   z-index: 30;
   background-color:rgb(0,0,0,0.2);
-  transition: all 0.4s;
-  -webkit-animation-name: fadeIn;
+  transition: all 0.8s;
+  transition-delay: 1s;
   animation-name: fadeIn;
   transition-timing-function: ease-out;
 }
@@ -81,10 +81,10 @@ html {
 .is-fullscreen hr {
 	width:40px;
 	height: 2px;
-	/* display: inline-block; */
+	display: inline-block;
 	/* float: right; */
 	/* margin-top: 130px; */
-	/* vertical-align: middle; */
+	vertical-align: middle;
 	/* margin-right: 0.5em; */ */
 
 }
@@ -106,8 +106,8 @@ hr {
     border: none;
     height: 1px;
     margin: 0rem 0 !important;
+    /* display:inline-block; */
 }
-
 /* controls the fixed logo*/
 .navbar-item img {
   max-height: 12rem !important;
@@ -168,9 +168,9 @@ navbar-item.vertical ul ul{
   width:100%;
   visibility:hidden;
   opacity:0;
-  transition: transform 0.2s;
+  transition: transform 0.4s;
   transform: translateX(50px);
-  line-height: 20px;
+  line-height: 30px;
 }
 
 /* inner ul show */
@@ -203,6 +203,13 @@ navbar-item.vertical li:hover > ul{
   }
   }
 
+  .sec-nav a {
+    position:relative;
+    width:300px;
+    color: white !important;
+    display: block;
+  }
+
   .demopadding {
   margin:50px auto;
   margin-left: 500px;
@@ -225,8 +232,6 @@ navbar-item.vertical li:hover > ul{
 	-khtml-border-radius: 		20px 20px 20px 20px;
 	color:#FFFFFF;
 }
-
-
 /* social media icons */
 .icon i {
 	font-size:20px;
@@ -515,7 +520,6 @@ a:hover, .uk-link:hover {
 }
 
 /* scroll to top buttom*/
-
 .scrolltop {
 	display:none;
 	width:100%;
@@ -559,24 +563,6 @@ a:hover, .uk-link:hover {
 	-o-transition: 0.5s;
 }
 
-/* load more */
-.totop {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-}
-.totop a {
-    display: none;
-}
-a, a:visited {
-    color: #33739E;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-}
-a:hover {
-    text-decoration: none;
-}
 
 hr.fullwidth {
 	border-top: 1px solid #8c8b8b;
@@ -591,9 +577,41 @@ hr.fullwidth {
   padding-left: 30px;
 }
 
-
 .footer a {
     color: white;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+
+#container {
+    width: 60%;
+    padding: 1em;
+    margin: auto;
+}
+
+.result {
+    background-color: #6a93d4;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border: solid 2px honeydew;
+}
+
+#showMoreTrigger:hover {
+    /* background-color: honeydew; */
+    /* border: solid 2px #6a93d4;
+    color: #052d6e */
+}
+
+#showMoreTrigger {
+  padding: 1em;
+  /* text-align: : center; */
+  display: flex;
+  justify-content: center;
+
 }

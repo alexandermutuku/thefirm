@@ -4,8 +4,8 @@
       <div class="navbar-brand navbar-item m-l-100 m-t-10">
           {{-- <a href=""><img src="/img/logo.jpg" alt="LOGO" width="112" height="112"></a> --}}
       </div> <!--end navbar brand is hidden -->
-      <div class="container is-fullscreen m-t-10">
-            <navbar-item class="vertical m-l-100 m-t-10">
+      <div class="container is-fullscreen">
+            <navbar-item class="vertical m-l-100">
               <ul>
                 <li><a href="/">HOME</a></li>
                 <hr>
@@ -39,12 +39,10 @@
 
       <div class="m-t-100 m-l-100 m-r-100">
         <hr>
-        <div class="columns">
-          <div class="column has-text-weight-light">
-            {{-- <a href="{{route('contact')}}"> Contact</a><a href="">Careers</a><a href=""> Terms</a> --}}
+          <div class="sec-nav has-text-weight-light has-text-white m-t-20">
             <div class="flex-center position-ref full-height" id="app">
                 @if (Route::has('login'))
-                    <div class="top-right links">
+                    <div class="">
                         @if (Auth::check())
                             <a href="{{ url('/home') }}">Home</a>
                         @else
@@ -53,18 +51,16 @@
                         @endif
                     </div>
                 @endif
+                  <div class="">
+                    <p>Copyright © 2018 Geosol Consulting</p>
+                  </div>
             </div>
-          </div>
-          <div class="column has-text-right has-text-weight-light">
-            <p>Copyright © 2018 Geosol Consulting</p>
-          </div>
         </div>
       </div> <!--end fullscreen nav footer-->
     </div><!--end fullscreen nav -->
 
-
     <div class="navbar navbar-menu topper">
-        <div class="navbar-brand navbar-item m-l-100 m-t-20 ">
+        <div class="navbar-brand navbar-item m-l-100 m-t-20">
               {{-- <div class="logo"><a href="/"><img src="img/logo.jpg" alt="LOGO"></a></div> --}}
         </div> <!--end navbar display the logo alone-->
         <div class="navbar-end navbar-burger navbar-item m-r-100 m-t-20 m-b-20 menu" data-target="navMenu">
@@ -73,5 +69,4 @@
             <span></span>
         </div> <!-- end top fixed navbar -->
     </div><!--end burger visible on all devices-->
-
 </nav> <!--end of nav -->
