@@ -183,9 +183,7 @@
     @include('_includes.footer')<!--includes the footer -->
 
   </body>
-
+  <script type="text/javascript" src="{{ URL::asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/jquery-3.3.1.js')}}"></script>  <!--for dev only -->
-
 </html>

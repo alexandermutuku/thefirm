@@ -12,7 +12,7 @@ window.Slug = require('slug');
 Slug.defaults.mode = 'rfc3986';
 
 import Buefy from 'buefy';
-// import jquery from 'jquery';
+import Vue from 'vue'
 
 Vue.use(Buefy)
 
@@ -27,11 +27,11 @@ Vue.component('slug-widget', require('./components/slugWidget.vue'));
 //
 // // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 //
-// var app = new Vue({
-//     el: '#app',
-//     data: {
-//     }
-//
-//     });
+var app = new Vue({
+    el: '#app',
+    data: {
+    }
+
+    });
 
 require('./manage')

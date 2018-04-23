@@ -50,7 +50,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-//active tabs need repair jquery
+// active tabs need repair jquery
 // $(".sexytabs").tabs({
 //   show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
 //   hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" }
@@ -272,3 +272,38 @@ var loadMore = new LoadMore({
 });
 
 loadMore.init();
+
+
+// Video conttrols
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed
+vid.pause();
+// to capture IE10
+vidFade();
+});
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})

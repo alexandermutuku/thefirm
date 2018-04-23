@@ -17,254 +17,164 @@
     </head> <!-- end of the header-->
     <body>
 
-    <section class="hero is-transparent is-fullheight">
-
+  <section class="hero is-medium">
       @include('_includes.nav.main_') <!--includes the main navigation -->
 
+    <div class="hero-video">
+      <video class="" poster="img/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <!--
+      - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+      WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+      <source src="img/polina.webm" type="video/webm">
+      <source src="img/polina.mp4" type="video/mp4">
+    </div>
+    </video>
+
+
       <div class="hero-body">
-        <div class="container fullheight">
-          <div class="container has-text-left">
-              <div class="columns is-vcentered">
-                <div class="column is-6 is-offset-1 has-text-left p-r-100">
-                  <h1 class="title is-2">
-                    The Company
-                  </h1>
-                  <div class="is-offset-3 p-l-50">
-                    <h2 class="subtitle is-4 ">
-                      Lorem ipsum dolor sit amet,
-                    </h2>
-                    <p class="lead">
-                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                  </div>
-
-                  <br>
-                  <p class="has-text-right has-text-weight-light"></p>
-                </div>
-                <div class="column is-5">
-                  <div class="columns">
-                    <div class="column">
-                      <figure class="image is-0.5by1">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                      <figure class="image is-0.5by0.5">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                      <figure class="image is-2by3">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                    </div>
-
-                    <div class="column">
-                      <figure class="image is-2by1">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                      <figure class="image is-2by3">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                      <figure class="image is-2by3">
-                        <img src="http://placehold.it/800x600" alt="Description">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {{-- <h1>Here Goes in the content of the Landing page</h1> --}}
-          </div> <!--try using the hero page styles -->
-        </div>
-      </div> <!-- contents of landing page -->
-
-      <div class="section" id='app'>
         <div class="container">
-        {{-- <button class="button block" @click="activeTab = 1">Set Music</button> --}}
-        <b-tabs v-model="activeTab">
-            <b-tab-item label="Pictures" class="is-tab">
-              Nunc nec velit nec libero vestibulum eleifendCurabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.
-            </b-tab-item>
 
-            <b-tab-item label="Music">
-              NNunc nec velit nec libero vestibulum eleifendCurabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.
-            </b-tab-item>
+          <div id="polina">
+            <vid-content>
+              <h1 class="title is-2 has-text-left">
+                ABOUT
+              </h1>
+              <p>filmed by Alexander Wagner 2011
+              <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus.</p>
+            </vid-content>
 
-            <b-tab-item label="Videos">
-              Nunc nec velit nec libero vestibulum eleifendCurabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctus.Nullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornareMaecenas vehicula pulvinar tellus, id sodales felis lobortis eget.Nunc nec velit nec libero vestibulum eleifend.Curabitur pulvinar congue luctusNullam hendrerit iaculis augue vitae ornare. Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.
-            </b-tab-item>
-        </b-tabs>
-      </div>
-      <h1>Updated for multi-gender dark action, oorah!</h1>
-
-
-<div class="lightpage">
-
-<div class="sexytabs">
-
-  <ul>
-    <li><a href="#Beyonce">
-      <span>Bootylicious</span></a></li>
-    <li><a href="#Fergie">
-      <span>Fergalicious</span></a></li>
-    <li><a href="#Rihanna">
-      <span>Umbrella?</span></a></li>
-  </ul>
-
-  <div class="contents">
-  <div id="Beyonce">
-    <h2>Beyonce</h2>
-    <img src="http://thumbs.hotnewhiphop.com/public/article/600_1359954424_17651c4dc1a8d1c5ba1c472544c51114.jpeg">
-    <p>American Apparel locavore iPhone wayfarers put a bird on it.  Whatever McSweeney's Banksy letterpress Marfa.  Drinking vinegar PBR synth, tote bag kale chips typewriter shabby chic mlkshk.  Twee Wes Anderson semiotics Blue Bottle Tumblr, locavore ennui squid.  Blog tofu paleo try-hard mustache bicycle rights DIY.  Forage quinoa DIY master cleanse.  Freegan tote bag squid keffiyeh, sriracha try-hard tousled gentrify McSweeney's pickled pork belly Neutra literally.</p>
-
-    <p>Actually synth Thundercats, pug direct trade wayfarers Schlitz. Gluten-free beard pickled wolf, vinyl cliche paleo authentic brunch Blue Bottle chambray keffiyeh Marfa 8-bit post-ironic. Lo-fi fixie occupy small batch. Salvia keytar cliche, occupy Brooklyn disrupt Helvetica gluten-free art party stumptown freegan gastropub cred. Freegan Truffaut keffiyeh Terry Richardson lo-fi, hoodie ennui. Readymade deep v selvage, tote bag church-key authentic flexitarian craft beer four loko biodiesel. VHS hashtag small batch drinking vinegar, wolf distillery YOLO post-ironic narwhal sustainable.</p>
-
-  </div>
-
-  <div id="Fergie">
-    <h2>Fergie</h2>
-    <img src="https://si0.twimg.com/profile_images/3282720177/1cfde8d5260721552f31a26cff5ccc22.png">
-    <p>Bushwick semiotics meh artisan, whatever gastropub pop-up narwhal Cosby sweater stumptown VHS synth kogi art party McSweeney's.  Helvetica locavore actually cray paleo.  +1 PBR gentrify, direct trade  narwhal tattooed polaroid Helvetica readymade wolf Tumblr authentic try-hard hella.  Try-hard 90's gentrify art party.  Helvetica Intelligentsia +1, banjo try-hard tote bag organic fashion axe gluten-free chambray stumptown Echo Park beard.  Craft beer DIY beard, roof party tofu plaid sustainable Tonx.  Small batch letterpress salvia sartorial deep v ugh, High Life aesthetic hoodie Neutra Vice freegan flannel.</p>
-
-  </div>
-
-  <div id="Rihanna">
-    <h2>Rihanna</h2>
-    <img src="http://s1.evcdn.com/images/block/I0-001/001/867/008-9.jpeg_/rihanna-08.jpeg">
-    <p>Chambray typewriter Odd Future, cliche Wes Anderson High Life Banksy cred bespoke Intelligentsia ethnic. YOLO gluten-free blog kale chips. Cliche Shoreditch church-key direct trade banjo ugh, forage pug meh typewriter yr chillwave wayfarers small batch. Trust fund Carles forage disrupt photo booth. Truffaut lo-fi Schlitz, Blue Bottle hoodie synth Thundercats. Actually cliche put a bird on it kitsch, ethical Thundercats synth drinking vinegar gluten-free lomo try-hard direct trade. Chambray viral you probably haven't heard of them salvia, ugh Pitchfork Terry Richardson selvage master cleanse.</p>
-
-  </div>
-  </div>
-</div>
-
-</div>
-
-
-<div class="darkpage">
-
-<div class="sexytabs dark">
-
-  <ul>
-    <li><a href="#Gosling">
-      <span>Jottings</span></a></li>
-    <li><a href="#Timberlake">
-      <span>Benefits</span></a></li>
-    <li><a href="#Lautner">
-      <span>Furry?</span></a></li>
-  </ul>
-
-  <div class="contents">
-  <div id="Gosling">
-    <h2>Gosling</h2>
-    <img src="http://imworld.aufeminin.com/story/20130805/ryan-gosling-56940_s96cx345cy200.jpg">
-    <p>American Apparel locavore iPhone wayfarers put a bird on it.  Whatever McSweeney's Banksy letterpress Marfa.  Drinking vinegar PBR synth, tote bag kale chips typewriter shabby chic mlkshk.  Twee Wes Anderson semiotics Blue Bottle Tumblr, locavore ennui squid.  Blog tofu paleo try-hard mustache bicycle rights DIY.  Forage quinoa DIY master cleanse.  Freegan tote bag squid keffiyeh, sriracha try-hard tousled gentrify McSweeney's pickled pork belly Neutra literally.</p>
-
-    <p>Actually synth Thundercats, pug direct trade wayfarers Schlitz. Gluten-free beard pickled wolf, vinyl cliche paleo authentic brunch Blue Bottle chambray keffiyeh Marfa 8-bit post-ironic. Lo-fi fixie occupy small batch. Salvia keytar cliche, occupy Brooklyn disrupt Helvetica gluten-free art party stumptown freegan gastropub cred. Freegan Truffaut keffiyeh Terry Richardson lo-fi, hoodie ennui. Readymade deep v selvage, tote bag church-key authentic flexitarian craft beer four loko biodiesel. VHS hashtag small batch drinking vinegar, wolf distillery YOLO post-ironic narwhal sustainable.</p>
-
-  </div>
-
-  <div id="Timberlake">
-    <h2>Timberlake</h2>
-    <img src="http://imalbum.aufeminin.com/album/D20121228/894767_Z5RAJN1HEXWRQGYCFUTKD8AVQ8ZMXS_justin-timberlake_H124540_S.jpg">
-    <p>Bushwick semiotics meh artisan, whatever gastropub pop-up narwhal Cosby sweater stumptown VHS synth kogi art party McSweeney's.  Helvetica locavore actually cray paleo.  +1 PBR gentrify, direct trade  narwhal tattooed polaroid Helvetica readymade wolf Tumblr authentic try-hard hella.  Try-hard 90's gentrify art party.  Helvetica Intelligentsia +1, banjo try-hard tote bag organic fashion axe gluten-free chambray stumptown Echo Park beard.  Craft beer DIY beard, roof party tofu plaid sustainable Tonx.  Small batch letterpress salvia sartorial deep v ugh, High Life aesthetic hoodie Neutra Vice freegan flannel.</p>
-
-  </div>
-
-  <div id="Lautner">
-    <h2>Lautner</h2>
-    <img src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQBvPhI8Zh8E1VfV&w=155&h=114&url=http%3A%2F%2Ffiles-cdn.formspring.me%2Fprofile%2F20110812%2Fn4e45d53be5a76_medium.jpg">
-    <p>Chambray typewriter Odd Future, cliche Wes Anderson High Life Banksy cred bespoke Intelligentsia ethnic. YOLO gluten-free blog kale chips. Cliche Shoreditch church-key direct trade banjo ugh, forage pug meh typewriter yr chillwave wayfarers small batch. Trust fund Carles forage disrupt photo booth. Truffaut lo-fi Schlitz, Blue Bottle hoodie synth Thundercats. Actually cliche put a bird on it kitsch, ethical Thundercats synth drinking vinegar gluten-free lomo try-hard direct trade. Chambray viral you probably haven't heard of them salvia, ugh Pitchfork Terry Richardson selvage master cleanse.</p>
-
-  </div>
-  </div>
-</div>
-
-
-</div>
-
-    </div>
-
-    <div class="container">
-      <div class="timeline">
-        <div class="callout left">
-          <div class="content">
-            <h2>2017</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
+            <div class="pause">
+              <button>Pause</button>
+            </div>
+            </div>
+            {{-- <h1>Here Goes in the content of the Landing page</h1> --}}
         </div>
-        <div class="callout right">
-          <div class="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-        <div class="callout left">
-          <div class="content">
-            <h2>2015</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-        <div class="callout right">
-          <div class="content">
-            <h2>2012</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-        <div class="callout left">
-          <div class="content">
-            <h2>2011</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-        <div class="callout right">
-          <div class="content">
-            <h2>2007</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div><!-- end of hero body -->
   </section> <!--end of section-->
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns is-vcentered">
+        <div class="column is-5">
+          <figure class="image is-4by3">
+            <img src="img/pic_3.png" alt="Description">
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1 has-text-right p-r-100">
+          <h1 class="title is-2 has-text-right">
+            Our Mission
+          </h1>
+          <hr>
+          <h2 class="subtitle is-4 m-t-20 is-italic">
+            Highly specialised
+          </h2>
+          <p class="lead ">
+            We are highly specialised, we talk, eat, drink and sleep groundwater resources. In short in we are strictly a technical consultancy specialised in groundwater consultancy. We have learned overtime that this specialization has allowed us to focus on “core issues” and clearly understand trends impacting groundwater resources and evolved service offerings that address the shifting needs.
+          </p>
+          <br>
+          {{-- <a href="">
+            <div data-wipe="DISCOVER MORE" class="has-text-weight-light">
+              <span class="btn">DISCOVER MORE</span>
+            </div>
+          </a> --}}
+        </div>
+      </div>
+    </div>
+  </div><!--end of section-->
+</section>
+
 
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
-          <div class="column is-6">
-            {{-- <figure class="image is-4by3">
-              <img src="http://placehold.it/800x600" alt="Description">
-            </figure> --}}
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-          <div class="column is-6 has-text-right">
-            <h1 class="title is-2">
-              Our Approach
+          <div class="column is-6 is-offset-1 has-text-left p-r-100">
+            <h1 class="title is-2 has-text-left">
+              Our Vision
             </h1>
-            <h2 class="subtitle is-4 m-t-20">
-              Lorem ipsum dolor sit amet,
+            <hr>
+            <h2 class="subtitle is-4 m-t-20 is-italic">
+              Highly specialised
             </h2>
             <p class="lead ">
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              We are highly specialised, we talk, eat, drink and sleep groundwater resources. In short in we are strictly a technical consultancy specialised in groundwater consultancy. We have learned overtime that this specialization has allowed us to focus on “core issues” and clearly understand trends impacting groundwater resources and evolved service offerings that address the shifting needs.
             </p>
             <br>
-            <p class="has-text-right has-text-weight-light">
-              <a  href="" class="is-medium is-info is-outlined">
-                DISCOVER MORE
-              </a>
-            </p>
+
           </div>
+
+          <div class="column is-6 has-text-left">
+            <div class="verticalLine">
+            <p class="m-t-30 is-size-3">850 - <h3>Hydrogeological assessments studies</h3></p>
+           </div>
+          <div class="verticalLine right m-l-100">
+             <p class="m-t-30 is-size-3">850K - <h3>successfull drillings</h3></p>
+          </div>
+          <div class="verticalLine">
+            <p class="m-t-30 is-size-3">850K - <h3>permitting</h3></p>
+         </div>
+         <a href="" class="">
+           <div data-wipe="OUR MILESTONES" class="has-text-weight-light m-t-20">
+             <span class="btn">OUR MILESTONES</span>
+           </div>
+         </a>
+        </div>
+
         </div>
       </div>
     </div><!--end of hero-body-->
+
+    <div class="hero-body">
+      <div class="has-text-centered">
+        <div class="columns is-vcentered">
+          <div class="column is-6 is-offset-1 has-text-left p-r-100">
+            <h1 class="title is-2  has-text-left p-t-20">
+              Our Team
+            </h1>
+            <hr>
+            <h2 class="subtitle is-4 m-t-20">
+              Solving diverse challenges
+            </h2>
+            <p class="lead">
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            {{-- <a href="">
+              <div data-wipe="DISCOVER MORE" class="has-text-weight-light">
+                <span class="btn">DISCOVER MORE</span>
+              </div>
+            </a> --}}
+          </div>
+          <div class="column is-5">
+            <div class="columns">
+              <div class="column">
+                <figure class="image is-0.5by1">
+                  <img src="/img/pic_2.png" alt="Description">
+                </figure>
+                <figure class="image is-0.5by0.5 p-t-10">
+                  <img src="/img/pic_1.png" alt="Description">
+                </figure>
+                <figure class="image is-2by3 p-t-10">
+                  <img src="/img/pic_2.png" alt="Description">
+                </figure>
+              </div>
+
+              <div class="column">
+                <figure class="image is-0.5by0.5">
+                  <img src="/img/pic_1.png" alt="Description">
+                </figure>
+                <figure class="image is-2by3 p-t-10 m-r-20">
+                  <img src="/img/pic_2.png" alt="Description">
+                </figure>
+                <figure class="image is-2by3 p-t-10">
+                  <img src="/img/pic_1.png" alt="Description">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--end of section -->
 
     @include('_includes.footer')<!--includes the footer -->
 
@@ -279,9 +189,7 @@
         }
     }
 </script>
-
+<script type="text/javascript" src="{{ URL::asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/jquery-3.3.1.js')}}"></script>  <!--for dev only -->
-
 </html>

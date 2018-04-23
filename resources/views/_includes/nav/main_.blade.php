@@ -1,4 +1,7 @@
 
+<div class="thetop">
+
+</div>
   <nav class="navbar is-fixed-top">
     <div class="navbar navbar-menu is-hidden-desktop is-fixed-top thetop" id="navMenu">
       <div class="navbar-brand navbar-item m-l-100 m-t-10">
@@ -21,7 +24,7 @@
                     <div class="m-l-20">
                         <li><a href="{{route('about')}}">ABOUT</a></li>
                         <li><a href="{{route('blog')}}">BLOG</a></li>
-                        <li><a href="{{route('project')}}">PROJECTS</a></li>
+                        <li><a href="{{route('project')}}">MILESTONES</a></li>
                     </div>
                   </ul>
                 </li>

@@ -14,7 +14,7 @@
 
     </head> <!-- end of the header-->
 
-    <body id='app'>
+  <body id='app'>
     <section class="hero is-transparent is-fullheight thetop">
       @include('_includes.nav.main_') <!--includes the main navigation -->
       <div class="hero-body">
@@ -36,7 +36,6 @@
         </div>
       </div> <!-- contents of landing page -->
     </section> <!--end of section-->
-
 
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -120,13 +119,14 @@
       </div>
     </div> <!--end of section -->
 
+
 <div class="hero-body">
   <div class="container">
     <div class="tile is-ancestor">
       <div class="tile is-4 is-parent">
-        <a href="">
+        <a href="" class="">
           <article class="tile is-child gray post">
-            <figure class="image is-0.5by1">
+          <figure class="image is-0.5by1">
               <img src="/img/pic_3.png" alt="Description">
             </figure>
             <span class="post__date" href="">22nd January 2018 </span>
@@ -169,13 +169,15 @@
       </div>
     </div>
 
-  <div id="container"></div>
-      <a><div class="has-text-weight-light"id="showMoreTrigger"></div></a>
+    {{-- <div id="container"></div> <!--loads the blog posts--> --}}
+    <a><div class="has-text-weight-light"id="showMoreTrigger">LOAD MORE</div></a>
+
   </div> <!--load more buttom-->
 </div>
     @include('_includes.footer')<!--includes the footer -->
 
   </body>
+  {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
   <script>
       export default {
           data() {
@@ -185,7 +187,21 @@
           }
       }
   </script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/jquery-3.3.1.js')}}"></script>  <!--for dev only -->
+  <script>
+    export default {
+        data() {
+            const today = new Date()
+
+            return {
+                date: new Date(),
+                minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 5),
+                maxDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 5)
+            }
+        }
+    }
+</script>
+
 </html>

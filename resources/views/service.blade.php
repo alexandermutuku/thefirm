@@ -13,14 +13,10 @@
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
       <link href="{{ asset('css/styles.css')}}" rel="stylesheet">
       <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.css">
-      <link rel="stylesheet" href=""/>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head> <!-- end of the header-->
     <body>
     <section class="hero is-transparent is-fullheight">
-
       @include('_includes.nav.main_') <!--includes the main navigation -->
-
       <div class="hero-body">
               <div class="columns is-vcentered">
                 <div class="column is-6 is-offset-1 p-r-100">
@@ -78,7 +74,7 @@
       <div class="container has-text-centered">
         <div class="columns is-vcentered">
 
-          <div class="column is-7 is-offset-1 has-text-left p-r-100">
+          <div class="column is-6 is-offset-1 has-text-left p-r-100">
             <h1 class="title is-2 has-text-left">
               Our approach
             </h1>
@@ -99,27 +95,59 @@
           </div>
         </div>
 
-          <div class="column is-4">
-            <div class="verticalLine">
-              <div class="m-t-30 is-size-1">850K</div>
-           </div>
-          <div class="verticalLine right">
-             <div class="m-t-30 is-size-1">850K</div>
-          </div>
-          <div class="verticalLine">
-            <div class="m-t-30 is-size-1">850K</div>
-         </div>
-
+        <div class="column is-5">
+          {{-- <figure class="image is-4by3">
+            <img src="http://placehold.it/800x600" alt="Description">
+          </figure> --}}
+          <button class="accordion">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
 
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
         </div>
       </div>
     </div><!--end of hero-body-->
 
-    @include('_includes.footer')<!--includes the footer -->
+    <section class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 has-text-centered">
+          Our Instagram
+        </h1>
+        <hr>
+        <div class="columns is-vcentered">
+          <div class="column is-4">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_2.png" alt="Description">
+            </figure>
+          </div>
 
+          <div class="column is-4">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_2.png" alt="Description">
+            </figure>
+          </div>
+
+          <div class="column is-4">
+            <figure class="image is-0.5by1">
+              <img src="/img/pic_2.png" alt="Description">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section><!--end of hero-body-->
   </body>
+      @include('_includes.footer')<!--includes the footer -->
+  <script type="text/javascript" src="{{ URL::asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/jquery-3.3.1.js')}}"></script>  <!--for dev only -->
 </html>
