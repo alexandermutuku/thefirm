@@ -49,13 +49,7 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-
-// active tabs need repair jquery
-// $(".sexytabs").tabs({
-//   show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
-//   hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" }
-// });
-
+//Scroll to top
 $(window).scroll(function() {
     if ($(this).scrollTop() > 50 ) {
         $('.scrolltop:hidden').stop(true, true).fadeIn();

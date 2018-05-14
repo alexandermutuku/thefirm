@@ -1,7 +1,5 @@
 
-<div class="thetop">
-
-</div>
+<div class="thetop"> </div>
   <nav class="navbar is-fixed-top">
     <div class="navbar navbar-menu is-hidden-desktop is-fixed-top thetop" id="navMenu">
       <div class="navbar-brand navbar-item m-l-100 m-t-10">
@@ -10,15 +8,15 @@
       <div class="container is-fullscreen">
             <navbar-item class="vertical m-l-100">
               <ul>
-                <li><a href="/">HOME</a></li>
-                <hr>
-                <li><a href="{{route('service')}}">WHAT WE DO</a></li>
-                <hr>
+                <li><a href="/">HOME</a><hr></li>
+
+                <li><a href="{{route('service')}}">WHAT WE DO</a><hr></li>
+
                 <li><a href="">OUR STORY</a>
                   <hr>
                   <ul>
                     <div class=""><!--start of line flow down-->
-                      <div class="" id="cool"></div>
+                      <div class="" id="grows"></div>
                     </div> <!--end of line flow down-->
 
                     <div class="m-l-20">
@@ -28,31 +26,32 @@
                     </div>
                   </ul>
                 </li>
-                <li><a href="{{route('contact')}}">CONTACT</a></li>
-                <hr>
+                <li><a href="{{route('contact')}}">CONTACT</a><hr></li>
               </ul>
             </navbar-item>
-            <navbar-item class="vertical demopadding">
-              <div class='icon social fb'><i class='fa fa-facebook'></i></div>
-              <div class='icon social in'><i class='fa fa-instagram'></i></div>
-              <div class='icon social tw'><i class='fa fa-twitter'></i></div>
-              <div class='icon social in'><i class='fa fa-linkedin'></i></div>
+            <navbar-item class="vertical linegrow">
+              <ul>
+                <li class='icon social fb'><i class='fa fa-facebook'></i></li>
+                <li class='icon social in'><i class='fa fa-instagram'></i></li>
+                <li class='icon social tw'><i class='fa fa-twitter'></i></li>
+                <li class='icon social in'><i class='fa fa-linkedin'></i></li>
+              <ul>
             </navbar-item> <!-- end of social media icons -->
       </div> <!--end of fullscreen nav contents-->
 
       <div class="m-t-100 m-l-100 m-r-100">
         <hr>
-          <div class="sec-nav has-text-weight-light has-text-white m-t-20">
+          <div class="secondary-nav has-text-weight-light has-text-white m-t-20">
             <div class="flex-center position-ref full-height" id="app">
                 @if (Route::has('login'))
-                    <div class="">
+                    <ul class="">
                         @if (Auth::check())
-                            <a href="{{ url('/home') }}">Home</a>
+                            <li><a href="{{ url('/home') }}">Home</a></li>
                         @else
-                            <a href="{{ url('/login') }}">Login</a>
-                            <a href="{{ url('/register') }}">Register</a>
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
                         @endif
-                    </div>
+                    </ul>
                 @endif
                   <div class="">
                     <p>Copyright © 2018 Geosol Consulting</p>

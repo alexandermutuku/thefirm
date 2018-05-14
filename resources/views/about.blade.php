@@ -17,7 +17,7 @@
     </head> <!-- end of the header-->
     <body>
 
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
       @include('_includes.nav.main_') <!--includes the main navigation -->
 
     <div class="hero-video">
@@ -25,41 +25,41 @@
         <!--
       - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
       WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-      <source src="img/polina.webm" type="video/webm">
+      <source src="img/video.webm" type="video/webm">
       <source src="img/polina.mp4" type="video/mp4">
-    </div>
     </video>
+    </div>
 
 
       <div class="hero-body">
         <div class="container">
+          <h1 class="title is-2 has-text-left has-text-white m-l-20">
+            ABOUT
+            <hr class="m-t-20">
+          </h1>
+
 
           <div id="polina">
             <vid-content>
-              <h1 class="title is-2 has-text-left">
-                ABOUT
-              </h1>
-              <p>filmed by Alexander Wagner 2011
-              <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus.</p>
+                <h4 class="has-text-weight-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus.acus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus.
+                </h4>
+                <div class="pause has-text-weight-light m-t-20">
+                  <button>Pause</button>
+                </div>
             </vid-content>
-
-            <div class="pause">
-              <button>Pause</button>
-            </div>
-            </div>
-            {{-- <h1>Here Goes in the content of the Landing page</h1> --}}
+          </div>
         </div>
     </div><!-- end of hero body -->
   </section> <!--end of section-->
 
-  <div class="hero-body">
+  <section class="hero-body">
     <div class="container has-text-centered">
       <div class="columns is-vcentered">
         <div class="column is-5">
-          <figure class="image is-4by3">
+          {{-- <figure class="image is-4by3">
             <img src="img/pic_3.png" alt="Description">
-          </figure>
+          </figure> --}}
         </div>
         <div class="column is-6 is-offset-1 has-text-right p-r-100">
           <h1 class="title is-2 has-text-right">
@@ -81,8 +81,7 @@
         </div>
       </div>
     </div>
-  </div><!--end of section-->
-</section>
+</section><!--end of section-->
 
 
     <div class="hero-body">

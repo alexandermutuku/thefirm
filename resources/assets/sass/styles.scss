@@ -14,7 +14,7 @@ $easing: ease-in-out;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
-  color: #445561;
+  color: #663300;
   overflow: hidden;
   font-size: 13px;
   background: whitesmoke;//background color before hover
@@ -27,7 +27,7 @@ $easing: ease-in-out;
     top: 0;
     overflow: hidden;
     color: #F1F1F2; // text color after hover
-    background: #445561; //background color on hover
+    background: #663300; //background color on hover
   }
 
   &:before {
@@ -273,7 +273,7 @@ $default-shadow-color: rgb(0, 0, 0);
     color: white;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 30px;
     width: 40px;
     height: 40px;
     transform: translateY(70px);

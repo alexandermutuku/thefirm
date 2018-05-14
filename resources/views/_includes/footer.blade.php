@@ -10,14 +10,17 @@
 					<li><a href="#">BLOG</a></li>
 					<li><a href="#">CONTACT</a></li>
 			 </ul>
-			</div>
+		 </div>
 			<div class="column">
-				<div class='icon social fb'><i class='fa fa-facebook'></i></div>
-				<div class='icon social in'><i class='fa fa-instagram'></i></div>
-				<div class='icon social tw'><i class='fa fa-twitter'></i></div>
-				<div class='icon social in'><i class='fa fa-linkedin'></i></div>
+				<ul>
+					<li class='icon social fb'><i class='fa fa-facebook'></i></li>
+					<li class='icon social in'><i class='fa fa-instagram'></i></li>
+					<li class='icon social tw'><i class='fa fa-twitter'></i></li>
+					<li class='icon social in'><i class='fa fa-linkedin'></i></li>
+			</ul>
 			</div>
 		</div>
+
 		<div class='scrolltop'>
 				<div class='scroll'><i class="fa fa-4x fa-angle-up"></i></div>
 		</div> <!--Scroll to top icon -->
@@ -62,5 +65,4 @@
 			</div>
 		</div>
 	</div>
-
 </footer><!--end of footer -->
