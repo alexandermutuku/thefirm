@@ -78,26 +78,48 @@ html {
 /* the colored horizontal line fullscreen*/
 .is-fullscreen hr {
 	width:40px;
-	height: 2px;
+	height: 1px;
 	display: inline-block;
+  background-color: white;
 	/* float: right; */
 	/* margin-top: 130px; */
 	vertical-align: middle;
 	/* margin-right: 0.5em; */ */
+}
 
+.fullscreen_nav_footer hr {
+	width:100%;
+	height: 1px;
+	display: inline-block;
+  background-color: white;
+	/* float: right; */
+	/* margin-top: 130px; */
+	vertical-align: middle;
+	/* margin-right: 0.5em; */ */
 }
 
 /* the colored horizontal line*/
 .hero-body hr {
-	width:40px;
-	height: 2px;
-	/* display:inline-flex; */
+	width:50px;
+	height: 5px;
+	display:inline-flex;
 	/* float: center; */
 	/* margin-top: 130px; */
 	/* vertical-align: middle; */
 	/* margin-right: 0.5em; */
 
 }
+
+.hero-land {
+  -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 8rem 1.5rem;
+    margin-top: 150px;
+}
+
 
 hr {
     background-color: #663300;
@@ -107,6 +129,8 @@ hr {
     margin: 0rem 0 !important;
     /* display:inline-block; */
 }
+
+
 /* controls the fixed logo*/
 .navbar-item img {
   max-height: 12rem !important;
@@ -219,9 +243,19 @@ navbar-item.vertical li:hover > ul{
 
   .secondary-nav a {
     position:relative;
-    width:300px;
     color: white !important;
     display: block;
+  }
+
+  .secondary-nav li {
+    color: white !important;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .secondary-nav copy{
+    color: white !important;
+    display:right;
   }
 
   .linegrow {
@@ -326,57 +360,6 @@ a:hover, .uk-link:hover {
     /* display: none; */
 }
 
-  /* Blog page*/
-
-  .post {
-    position: relative;
-    padding: 20px;
-    flex-basis: auto;
-  }
-
-  .post__date {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 100;
-  }
-
-
-  .post__category {
-    font-size: .6rem;
-    text-transform: uppercase;
-    font-weight: 100;
-  }
-
-  .post__title {
-    font-size: 1.0rem;
-    font-weight: 600;
-    margin: 20px 0 10px;
-    color: black;
-  }
-
-  .post__content {
-    font-size: 1.3rem;
-    margin-bottom: 50px;
-  }
-
-  .post__category,
-  .post__permalink {
-    color: #4a4a4a;
-    text-decoration: underline;
-  }
-
-  .post__permalink {
-    position: absolute;
-    bottom: 20px;
-  }
-
-  .fb-auto {
-    flex-basis: auto;
-  }
-
-  .gray {
-    background:none;
-  }
 
   /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -391,7 +374,7 @@ a:hover, .uk-link:hover {
     content: '';
     position: absolute;
     width: 2px;
-    background-color:#663300;
+    background-color:rgba(102,51,0,0.4);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -414,8 +397,8 @@ a:hover, .uk-link:hover {
     height: 25px;
     right: -10px;
     background-color: white;
-    border: 3px solid #663300;
-    top: 15px;
+    border: 3px solid rgba(102,51,0,0.7);
+    top: 11px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -435,13 +418,13 @@ a:hover, .uk-link:hover {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 14px;
     width: 0;
     z-index: 1;
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent whitesmoke;
+    border-color: transparent transparent transparent rgba(102,51,0,0.4);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -449,13 +432,13 @@ a:hover, .uk-link:hover {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 14px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 20px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent whitesmoke transparent transparent;
+    border-color: transparent rgba(102,51,0,0.4)transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -463,12 +446,36 @@ a:hover, .uk-link:hover {
     left: -15px;
 }
 
-/* The actual content */
-.content {
-    padding: 20px 30px;
-    background-color: whitesmoke;
+.card {
+    background-color: white;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important;
+    color: #4a4a4a;
+    max-width: 100%;
     position: relative;
-    border-radius: 6px;
+}
+
+.card-content {
+    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0rem;
+}
+
+.journal {
+  position: absolute;
+}
+
+.jounal h1 {
+  font-family: "Flash Back - Demo";
+  font-size:60px;
+  text-align: left;
+  color: #663300;
+}
+
+.title {
+    color: #663300 !important;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -529,15 +536,17 @@ a:hover, .uk-link:hover {
       letter-spacing: 0.1rem;
 }
 .accordion::after {
-  content: '\f067';
+  content: '\f077';
   font-family: "fontawesome";
-  font-size:12px;
+  font-size:14px;
   float:right;
   font-weight: lighter;
+  /* -webkit-text-stroke:1px rgba(102,51,0,0.2); */
+  color:rgba(102,51,0,0.4);
 }
 
 .accordion.active::after {
-  content: '\f068';
+  content: '\f078';
 }
 
 .active, .accordion:hover {
@@ -556,13 +565,12 @@ a:hover, .uk-link:hover {
     background-color:inherit;
     /* border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke; */
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(102,51,0,0.24);
     max-height: 0;
     overflow: hidden;
     margin-bottom: 0!important;
     transition: max-height 0.5s ease-in-out;
     /* transition: height 1s ease; */
-
 }
 
 /* scroll to top buttom*/
@@ -650,6 +658,20 @@ hr.fullwidth {
   display: flex;
   justify-content: center;
 
+}
+
+.medium-cover {
+  width: 100%;
+	min-height: 50%;
+	height: 50vh;
+	background-image: url("/img/landing.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	display: table;
+	font-family: "Montserrat", sans-serif;
+	color: #663300;
 }
 
 .hero-dark {

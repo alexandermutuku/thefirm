@@ -13,6 +13,7 @@ Slug.defaults.mode = 'rfc3986';
 
 import Buefy from 'buefy';
 import Vue from 'vue'
+import Googlefonts from 'googlefonts';
 
 Vue.use(Buefy)
 

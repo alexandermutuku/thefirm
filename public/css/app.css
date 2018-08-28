@@ -17957,3 +17957,49 @@ h1 {
   }
 }
 
+/* PREREQUISITED CSS STYLES FOR LORY.JS */
+
+.frame {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slides {
+  display: inline-block;
+}
+
+/* CUSTOM CSS STYLES FOR THE PEN AND THE SLIDER */
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.frame {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.slides {
+  text-align: center;
+}
+
+.slides .js_slide {
+  background-color: #2E435A;
+  color: #fff;
+  width: 270px;
+  margin-right: 10px;
+  height: 250px;
+  font-size: 16px;
+  line-height: 125px;
+}
+
+.frame .slides li {
+  position: relative;
+  display: inline-block;
+}
+

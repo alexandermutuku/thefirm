@@ -17,38 +17,63 @@
   @include('_includes.nav.main_') <!--includes the main navigation -->
 
   <body>
-    <section class="hero"> <!-- add a class 'is-bg' to include bg image-->
-        <div class="container_item landing-page-container">
+    <section class="hero is-fullheight">
+          <div class="hero-land has-text-centered">
+              <div class="columns">
+                <div class="column is-3">
+
+                </div>
+                <div class="column is-5 has-text-centered">
+                  <span class="title is-2  has-text-centered p-t-20">
+                    Consectetur adipiscing elit
+                  </span>
+                  <h2 class="is-4 m-t-20">
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                  </h2>
+                  <br>
+                  <a href="">
+                    <div data-wipe="DISCOVER MORE" class="has-text-weight-light m-t-20">
+                      <span class="btn">DISCOVER MORE</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-3">
+
+                </div>
+              </div>
+          </div>
+
+        {{-- <div class="container_item landing-page-container">
           <div class="container-wrapper">
             <p class="coords"> N 49 416 35.99 W 0 42 11.30</p>
             <div class="ecllipse-container">
-
               <h2 class="greeting">explore</h2>
-
               <div class="ellipse ellipse_outer--thin">
-
                 <div class="ellipse ellipse_orbit"></div>
-
               </div>
-              <div class="ellipse ellipse_outer--thick"></div>
+              <div class="ellipse ellipse_outer--thick"></div> <!--rotating ellipses -->
 
             </div>
           </div>
-        </div>
+        </div> --}}
     </section>
+
+
+
+
     <section class="hero">
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="columns is-vcentered">
             <div class="column is-5">
               <figure class="image is-5by4">
-                <img src="/img/the_eye_5_4.jpg" alt="Description">
+                <img src="/img/drill_rig_2.jpg" alt="Description">
               </figure>
             </div>
 
             <div class="column is-6 is-offset-1 has-text-right p-r-100">
               <h1 class="title is-2 has-text-right">
-                What makes us unique ?
+                What sets us apart ?
               </h1>
               <hr>
               <h2 class="subtitle is-4 m-t-20">
@@ -68,9 +93,9 @@
         </div>
       </div>
     </section><!--end of section-->
+
     <section class="hero">
-      <div class="">
-        <div class="has-text-centered">
+      <div class="hero-body">
           <div class="columns is-vcentered">
             <div class="column is-6 is-offset-1 has-text-left p-r-100">
               <h1 class="title is-2  has-text-left p-t-20">
@@ -118,58 +143,96 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section> <!--end of section -->
+
+    <section class="hero medium-cover">
+      <div class="hero-body">
+
+      </div>
+    </section> <!--end of section -->
+
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <div class="tile is-ancestor">
-            <div class="tile is-4 is-parent">
-              <a href="" class="">
-                <article class="tile is-child gray post">
-                <figure class="image is-0.5by1">
-                    <img src="/img/pic_3.png" alt="Description">
+          <div class="jounal has-text-left m-b-30">
+            <h1 class="">
+              Our journal
+            </h1>
+            <hr>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-0.5by0.5 p-t-10">
+                    <img src="/img/camels_2.jpg" alt="Description">
                   </figure>
-                  <span class="post__date" href="">22nd January 2018 </span>
-                  <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget </h2>
-                </article>
-              </a>
+                </div>
+
+                <div class="card-content">
+                  <div class="content">
+                    <time class="has-text-weight-light is-small" datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <h4 class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus.</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-0.5by1 p-t-10">
+                    <img src="/img/camels.jpg" alt="Description">
+                  </figure>
+                </div>
+
+                <div class="card-content">
+                  <div class="content">
+                    <time class="has-text-weight-light is-small" datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <h4 class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus.</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-0.5by1 p-t-10">
+                    <img src="/img/camels.jpg" alt="Description">
+                  </figure>
+                </div>
+
+                <div class="card-content">
+                  <div class="content">
+                    <time class="has-text-weight-light is-small" datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <h4 class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus.</h4>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="tile is-vertical is-parent">
-              <a href="">
-                <article class="tile is-child gray post">
-                  <figure class="image is-0.5by1">
-                    <img src="/img/pic_2.png" alt="Description">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by3 p-t-10">
+                    <img src="/img/drill_rig_2.jpg" alt="Description">
                   </figure>
-                  <span class="post__date" href="">22nd January 2018 </span>
-                  <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. </h2>
-                </article>
-             </a>
-            <a href="">
-              <article class="tile is-child gold post">
-                <figure class="image is-0.5by1">
-                  <img src="/img/pic_1.png" alt="Description">
-                </figure>
-                <span class="post__date" href="">22nd January 2018 </span>
-                <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus</h2>
-              </article>
-            </a>
-            </div>
+                </div>
 
-            <div class="tile is-parent">
-              <a href="">
-                <article class="tile is-child gray post">
-                  <figure class="image is-0.5by1">
-                    <img src="/img/pic_1.png" alt="Description">
-                  </figure>
-                  <span class="post__date" href="">22nd January 2018 </span>
-                  <h2 class="post__title">Etiam ante tortor, faucibus sit amet gravida eget, accumsan et metus. Morbi sem metus, suscipit ac </h2>
-                </article>
-              </a>
+                <div class="card-content">
+                  <div class="content">
+                    <time class="has-text-weight-light is-small" datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <h4 class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus.</h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
           {{-- <div id="container"></div> <!--loads the blog posts--> --}}
             <a><div class="has-text-weight-light"id="showMoreTrigger">LOAD MORE</div></a>
         </div>
@@ -178,10 +241,8 @@
   </body>
 
   @include('_includes.footer')<!--includes the footer -->
-
   <script src="{{ asset('js/app.js') }}"></script>
   <script type="text/javascript" src="{{ URL::asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-
 </html>
